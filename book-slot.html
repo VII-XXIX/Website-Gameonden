@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Your Throne | GAMEON DEN Booking Protocol</title>
+    <meta name="description"
+        content="Execute your gaming mission. Book your high-performance slot at GAMEON DEN Chennai. Instant confirmation via Secure Uplink.">
+
+    <!-- Design System & Styles -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/book-slot.css">
+</head>
+
+<body>
+    <header class="header" id="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="./index.html" aria-label="GAMEON DEN Home">
+                        <span class="logo-text">GAMEON</span>
+                        <span class="logo-accent">DEN</span>
+                    </a>
+                </div>
+
+                <div class="nav-menu" id="nav-menu">
+                    <a href="./index.html" class="nav-link">Portal</a>
+                    <a href="./games.html" class="nav-link">The Armory</a>
+                    <a href="./pricing.html" class="nav-link">Access Plans</a>
+                    <a href="./book-slot.html" class="nav-link active">Secure Throne</a>
+                    <a href="./about.html" class="nav-link">Origins</a>
+                    <a href="./contact.html" class="nav-link">Uplink</a>
+                </div>
+
+                <button class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Booking Hero -->
+        <section class="booking-hero flagship-hero">
+            <div class="hero-background"></div>
+            <div class="container hero-content text-center">
+                <div class="hero-tagline">Deployment Protocol Initialized</div>
+                <h1 class="hero-title">SECURE YOUR <br><span class="hero-accent">THRONE</span></h1>
+                <p class="hero-description mx-auto">Initiate your booking protocol. Transmission to WhatsApp is
+                    immediate.</p>
+            </div>
+        </section>
+
+        <!-- Command Interface -->
+        <section class="quick-booking">
+            <div class="container">
+                <div class="booking-grid">
+                    <!-- Left: Control Form -->
+                    <div class="form-container glass-card">
+                        <div class="form-header">
+                            <h2 class="section-title text-left">Mission Parameters</h2>
+                            <p>Fill in the data packets below to generate your uplink.</p>
+                        </div>
+
+                        <form class="booking-form" id="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="player-name">Operative Name</label>
+                                    <input type="text" id="player-name" name="playerName" placeholder="e.g. Ghost"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone-number">Vocal Link (Mobile)</label>
+                                    <input type="tel" id="phone-number" name="phoneNumber" placeholder="+91..."
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="booking-date">Mission Date</label>
+                                    <input type="date" id="booking-date" name="bookingDate" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Arrival Protocol (Time)</label>
+                                <div id="time-slot-container" class="time-slot-grid">
+                                    <!-- Dynamics -->
+                                </div>
+                                <input type="hidden" id="booking-time" name="bookingTime" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="num-players">Squad Size</label>
+                                    <select id="num-players" name="numPlayers" required>
+                                        <option value="1">Lone Wolf (1 Player)</option>
+                                        <option value="2">Synchronized Duo (2 Players)</option>
+                                        <option value="4">Full Alpha Squad (4 Players)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Duration (H:M)</label>
+                                    <div class="dual-select">
+                                        <select id="duration-hours" name="durationHours" required>
+                                            <option value="1">1H</option>
+                                            <option value="2">2H</option>
+                                            <option value="3">3H</option>
+                                            <option value="4">4H+</option>
+                                        </select>
+                                        <select id="duration-minutes" name="durationMinutes" required>
+                                            <option value="0">:00</option>
+                                            <option value="30">:30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="game-preference">Weapon of Choice (Game)</label>
+                                <select id="game-preference" name="gamePreference">
+                                    <option value="Any">Optimized Random Selection</option>
+                                    <option value="Spider-Man 2">Spider-Man 2</option>
+                                    <option value="FIFA 25">FIFA 25</option>
+                                    <option value="WWE 2K25">WWE 2K25</option>
+                                    <option value="Mortal Kombat">Mortal Kombat</option>
+                                </select>
+                            </div>
+
+                            <div class="summary-module glass-card">
+                                <div class="cost-calculation">
+                                    <div class="calc-row"><span>Base Rate</span><span id="rate-display">₹90/hr</span>
+                                    </div>
+                                    <div class="calc-row"><span>Multi-Player Mod</span><span
+                                            id="players-display">1x</span></div>
+                                    <div class="calc-total"><span>ESTIMATED PAYLOAD</span><span
+                                            id="total-cost-display">₹90</span></div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large w-full">
+                                TRANSMIT UPLINK (TO WHATSAPP)
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Right: Intel Module -->
+                    <div class="intel-column">
+                        <div class="info-module glass-card">
+                            <h3>Sector Availability</h3>
+                            <div class="availability-status">
+                                <span class="status-indicator"></span>
+                                <span class="text-glow">System Online</span>
+                                <div class="stats-time">10:00 - 22:00</div>
+                            </div>
+                        </div>
+
+                        <div class="info-module glass-card">
+                            <h3>Access Protocols</h3>
+                            <ul class="intel-list">
+                                <li><span class="icon">🔓</span> All AAA Missions Unlocked</li>
+                                <li><span class="icon">💎</span> 4K Native Processing</li>
+                                <li><span class="icon">💺</span> VIP Comfort Matrix</li>
+                                <li><span class="icon">🥤</span> Refreshments Included</li>
+                            </ul>
+                        </div>
+
+                        <div class="direct-uplink glass-card">
+                            <h3>Emergency Uplink</h3>
+                            <p>Need immediate deployment? Skip the protocol.</p>
+                            <a href="https://wa.me/917448902644?text=COMMAND%20UPLINK%3A%20Requesting%20Immediate%20Mission%20Start."
+                                class="btn btn-secondary w-full">⚡ Quick Deploy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">GAMEON</span>
+                        <span class="logo-accent">DEN</span>
+                    </div>
+                    <p>Chennai's premier high-tech gaming sanctuary. Powered by pure passion and flagship hardware.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Mission Control</h3>
+                    <ul>
+                        <li><a href="./index.html">Portal</a></li>
+                        <li><a href="./games.html">The Armory</a></li>
+                        <li><a href="./pricing.html">Access Plans</a></li>
+                        <li><a href="./book-slot.html">Secure Throne</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Secure Uplink</h3>
+                    <p>+91 7448902644</p>
+                    <p>gameonden.avadi@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/gameon_den/" target="_blank" aria-label="Instagram">IG</a>
+                        <a href="https://youtube.com/@gameon_den" target="_blank" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GAMEON DEN. Transmission Secured.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/book-slot.js"></script>
+</body>
+
+</html>

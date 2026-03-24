@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Armory | GAMEON DEN Game Library</title>
+    <meta name="description"
+        content="Explore Chennai's most elite collection of AAA titles. From competitive eSports to immersive adventures, find your next mission at GAMEON DEN.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/games-console.css">
+</head>
+
+<body>
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header" id="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="./index.html" aria-label="GAMEON DEN Home">
+                        <span class="logo-text">GAMEON</span>
+                        <span class="logo-accent">DEN</span>
+                    </a>
+                </div>
+
+                <div class="nav-menu" id="nav-menu">
+                    <a href="./index.html" class="nav-link">Portal</a>
+                    <a href="./games.html" class="nav-link active">The Armory</a>
+                    <a href="./pricing.html" class="nav-link">Access Plans</a>
+                    <a href="./book-slot.html" class="nav-link">Secure Throne</a>
+                    <a href="./about.html" class="nav-link">Origins</a>
+                    <a href="./contact.html" class="nav-link">Uplink</a>
+                </div>
+
+                <button class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Featured Hero Carousel -->
+        <section class="featured-hero">
+            <div class="featured-hero-background">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800" alt="WWE 2K25">
+            </div>
+
+            <div class="featured-hero-content">
+                <h1 class="featured-game-title">WWE 2K25</h1>
+                <div class="featured-game-tags">
+                    <span class="game-tag-pill">WRESTLING</span>
+                    <span class="game-tag-pill">MULTIPLAYER</span>
+                    <span class="game-tag-pill">SIMULATION</span>
+                </div>
+                <div class="featured-game-ctas">
+                    <button class="btn btn-secondary" onclick="window.showGameDetails('wwe2k25')">▶ View
+                        Gameplay</button>
+                    <a href="./book-slot.html?game=WWE2K25" class="btn btn-primary">🎮 Book This Game</a>
+                </div>
+            </div>
+
+            <div class="hero-nav-arrows">
+                <button class="hero-arrow hero-arrow-prev" aria-label="Previous game">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="hero-arrow hero-arrow-next" aria-label="Next game">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="hero-progress"></div>
+        </section>
+
+        <!-- Mood Selector -->
+        <section class="mood-selector">
+            <div class="container">
+                <div class="mood-pills">
+                    <button class="mood-pill active" data-mood="all">
+                        <span class="mood-icon">🎮</span>
+                        <span>All Games</span>
+                    </button>
+                    <button class="mood-pill" data-mood="high-action">
+                        <span class="mood-icon">🔥</span>
+                        <span>High Action</span>
+                    </button>
+                    <button class="mood-pill" data-mood="story-rich">
+                        <span class="mood-icon">🧠</span>
+                        <span>Story Rich</span>
+                    </button>
+                    <button class="mood-pill" data-mood="racing-rush">
+                        <span class="mood-icon">🚗</span>
+                        <span>Racing Rush</span>
+                    </button>
+                    <button class="mood-pill" data-mood="fight-night">
+                        <span class="mood-icon">🥊</span>
+                        <span>Fight Night</span>
+                    </button>
+                    <button class="mood-pill" data-mood="multiplayer">
+                        <span class="mood-icon">👥</span>
+                        <span>Multiplayer Madness</span>
+                    </button>
+                    <button class="mood-pill" data-mood="casual-chill">
+                        <span class="mood-icon">😌</span>
+                        <span>Casual Chill</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Rails Container -->
+        <div class="game-rails-container"></div>
+
+        <!-- Book Now CTA -->
+        <section class="games-cta">
+            <div class="container">
+                <div class="cta-content glass-card text-center">
+                    <h2 class="hero-title">READY TO <span class="hero-accent">ASCEND?</span></h2>
+                    <p class="hero-description mx-auto">Don't just play. Dominate. Book your slot in the elite gaming
+                        sanctuary now.</p>
+                    <div class="cta-buttons">
+                        <a href="./book-slot.html" class="btn btn-primary btn-large">Initiate Deployment</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">GAMEON</span>
+                        <span class="logo-accent">DEN</span>
+                    </div>
+                    <p>Chennai's premier high-tech gaming sanctuary. Powered by pure passion and flagship hardware.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Mission Control</h3>
+                    <ul>
+                        <li><a href="./index.html">Portal</a></li>
+                        <li><a href="./games.html">The Armory</a></li>
+                        <li><a href="./pricing.html">Access Plans</a></li>
+                        <li><a href="./book-slot.html">Secure Throne</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Secure Uplink</h3>
+                    <p>+91 7448902644</p>
+                    <p>gameonden.avadi@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/gameon_den/" target="_blank" aria-label="Instagram">IG</a>
+                        <a href="https://youtube.com/@gameon_den" target="_blank" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GAMEON DEN. Transmission Secured.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/games.js"></script>
+</body>
+
+</html>

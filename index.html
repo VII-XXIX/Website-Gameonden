@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Redirect if user is in /src/ path which breaks relative links
+        if (window.location.pathname.includes('/src/')) {
+            const newPath = window.location.pathname.replace('/src/', '/');
+            window.location.replace(newPath);
+        }
+    </script>
+    <title>GAMEON DEN | Chennai's Ultimate Gaming Sanctuary</title>
+    <meta name="description"
+        content="Dive into the future of gaming at GAMEON DEN Chennai. Experience high-end consoles, elite PC setups, and a community of true gamers. Book your throne today.">
+    <meta name="keywords"
+        content="gaming lounge Chennai, premium gaming center, PS5 lounge, elite PC gaming, FIFA 25 Chennai, eSports hub">
+
+    <!-- Design System & Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+
+<body>
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loader"></div>
+    </div>
+    <header class="header" id="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="./index.html" aria-label="GAMEON DEN Home">
+                        <span class="logo-text">GAMEON</span>
+                        <span class="logo-accent">DEN</span>
+                    </a>
+                </div>
+
+                <div class="nav-menu" id="nav-menu">
+                    <a href="./index.html" class="nav-link active">Portal</a>
+                    <a href="./games.html" class="nav-link">The Armory</a>
+                    <a href="./pricing.html" class="nav-link">Access Plans</a>
+                    <a href="./book-slot.html" class="nav-link">Secure Throne</a>
+                    <a href="./about.html" class="nav-link">Origins</a>
+                    <a href="./contact.html" class="nav-link">Uplink</a>
+                </div>
+
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Flagship Hero Section -->
+        <section class="hero flagship-hero">
+            <div class="hero-background"></div>
+            <div class="container hero-layout">
+                <div class="hero-content">
+                    <div class="hero-tagline">Portal to the Next Dimension</div>
+                    <h1 class="hero-title">
+                        ASCEND YOUR<br>
+                        <span class="hero-accent">GAMEPLAY</span>
+                    </h1>
+                    <p class="hero-description text-glow">
+                        Chennai's elite gaming sanctuary featuring flagship consoles and ultra-high-speed
+                        infrastructure.
+                        Where precision meets luxury.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="./book-slot.html" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Secure Slot
+                            via WhatsApp</a>
+                        <a href="./games.html" class="btn btn-secondary"> Browse Armory</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">AAA Titles</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4K</span>
+                            <span class="stat-label">Native Res</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">₹70</span>
+                            <span class="stat-label">Entry Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Experience Cards -->
+        <section class="featured-experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">The Experience</h2>
+                    <p class="section-subtitle">Engineered for perfection, curated for champions.</p>
+                </div>
+
+                <div class="experience-grid">
+                    <div class="experience-card glass-card">
+                        <div class="card-icon">⚡</div>
+                        <h3>Ultra-Low Latency</h3>
+                        <p>Enterprise-grade fiber with dedicated routing for competitive dominance.</p>
+                    </div>
+                    <div class="experience-card glass-card">
+                        <div class="card-icon">🎮</div>
+                        <h3>Next-Gen Hardware</h3>
+                        <p>The latest PS5 and Xbox Series X consoles paired with 144Hz displays.</p>
+                    </div>
+                    <div class="experience-card glass-card">
+                        <div class="card-icon">🍹</div>
+                        <h3>Pro Comfort</h3>
+                        <p>Ergonomic seating and premium climate control for marathon sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Games Showcase -->
+        <section class="featured-games">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"> Trending Missions</h2>
+                    <p class="section-subtitle"> The most played titles in the Den right now.</p>
+                </div>
+
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="https://i.imgur.com/5D2Edb2.jpg" alt="Spider-Man 2" loading="lazy">
+                        </div>
+                        <div class="game-overlay">
+                            <div class="game-info">
+                                <h3>Spider-Man 2</h3>
+                                <p>Action-Adventure</p>
+                                <span class="game-platform">Exclusive PS5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="https://i.imgur.com/YG2iuKK.jpeg?auto=compress&cs=tinysrgb&w=400" alt="FIFA 25"
+                                loading="lazy">
+                        </div>
+                        <div class="game-overlay">
+                            <div class="game-info">
+                                <h3>FIFA 25</h3>
+                                <p>Competitive Sports</p>
+                                <span class="game-platform">Multi-Platform</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="https://i.imgur.com/ojr4eio.jpeg?auto=compress&cs=tinysrgb&w=400" alt="WWE 2K25"
+                                loading="lazy">
+                        </div>
+                        <div class="game-overlay">
+                            <div class="game-info">
+                                <h3>WWE 2K25</h3>
+                                <p>Sports Entertainment</p>
+                                <span class="game-platform">4K Console</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-footer">
+                    <a href="./games.html" class="btn btn-secondary"> View All 50+ Games</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Tiers -->
+        <section class="pricing-overview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Access Plans</h2>
+                    <p class="section-subtitle">Select your entry protocol. No hidden taxes.</p>
+                </div>
+
+                <div class="pricing-cards">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Lone Wolf</h3>
+                            <div class="price">
+                                <span class="amount">₹90</span>
+                                <span class="period">/per hr</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Priority Console Access</li>
+                            <li>Personal Gaming Pod</li>
+                            <li>Full AAA Library</li>
+                        </ul>
+                        <a href="./book-slot.html" class="btn btn-secondary">Infiltrate</a>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">System Preferred</div>
+                        <div class="pricing-header">
+                            <h3>Duo Drive</h3>
+                            <div class="price">
+                                <span class="amount">₹80</span>
+                                <span class="period">/player/hr</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>2 Player Side-by-Side</li>
+                            <li>Co-op Optimization</li>
+                            <li>Premium Refreshments</li>
+                        </ul>
+                        <a href="./book-slot.html" class="btn btn-primary">Synchronize</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Squad Alpha</h3>
+                            <div class="price">
+                                <span class="amount">₹70</span>
+                                <span class="period">/player/hr</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>4 Player Party Island</li>
+                            <li>Private Booth Access</li>
+                            <li>VIP Tournament Setup</li>
+                        </ul>
+                        <a href="./book-slot.html" class="btn btn-secondary">Assemble</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Protocol -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content glass-card">
+                    <h2>READY TO ASCEND?</h2>
+                    <p>Execute your booking protocol now. Immediate confirmation via Secure Uplink.</p>
+                    <div class="cta-buttons">
+                        <a href="./book-slot.html" class="btn btn-primary btn-large"> Initiate WhatsApp Booking</a>
+                        <div class="uplink-status">
+                            <span class="status-indicator"></span> System Online: 10AM - 10PM
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">GAMEON</span>
+                        <span class="logo-accent">DEN</span>
+                    </div>
+                    <p>Chennai's premier high-tech gaming sanctuary. Powered by pure passion and flagship hardware.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Mission Control</h3>
+                    <ul>
+                        <li><a href="./index.html">Portal</a></li>
+                        <li><a href="./games.html">The Armory</a></li>
+                        <li><a href="./pricing.html">Access Plans</a></li>
+                        <li><a href="./book-slot.html">Secure Throne</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Secure Uplink</h3>
+                    <p>+91 7448902644</p>
+                    <p>gameonden.avadi@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/gameon_den/" target="_blank" aria-label="Instagram">IG</a>
+                        <a href="https://youtube.com/@gameon_den" target="_blank" aria-label="YouTube">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GAMEON DEN. Transmission Secured.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/home.js"></script>
+</body>
+
+</html>
